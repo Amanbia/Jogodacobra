@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  color: #ffffff;
+  user-select: none;
+
+  /* Imagem de fundo ampliada */
+  background-image: url("imagem/fundo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  grid-template-rows: repeat(10, 60px);
+  gap: 4px;
+  background: #538ce0;
+  padding: 12px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #69aed6;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 5px rgba(153, 147, 147, 0.7),
+              inset 0 -2px 5px rgba(153, 147, 147, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.snake {
+  background-color: #3ec41d;
+  box-shadow: 0 0 10px #77da84;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food {
+  background-color: #db6d23;
+  box-shadow: 0 0 15px #f1711b;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Opcional: efeito hover pra células (se quiser) */
+.cell:hover {
+  filter: brightness(1.1);
+  cursor: default;
+}
+
+.botao-jogar {
+  background-color: #db6d23;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.botao-jogar:hover {
+  background-color: #f1711b;
+}
+
